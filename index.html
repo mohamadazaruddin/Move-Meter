@@ -674,14 +674,14 @@
             top: 10%;
             right: 7%;
             left: 7%;
-            height: 25%;
+            height: 40%;
         }
 
         .layout-bottom-center .preview-metrics {
             right: 7%;
             bottom: 10%;
             left: 7%;
-            height: 25%;
+            height: 40%;
         }
 
         .layout-horizontal .preview-metrics {
@@ -745,7 +745,7 @@
             display: block;
             min-width: 0;
             margin-top: 4px;
-            overflow: hidden;
+            /* overflow: hidden; */
             color: var(--dl-white);
             font-size: clamp(.85rem, 2.8vw, 2.25rem);
             font-weight: 850;
@@ -906,9 +906,9 @@
         .export-card {
             padding: var(--space-4);
             border: var(--border-subtle);
-            border-color: rgba(134, 188, 37, .45);
+            /* border-color: rgba(134, 188, 37, .45); */
             border-radius: var(--radius-md);
-            background: linear-gradient(145deg, rgba(134, 188, 37, .14), rgba(10, 10, 10, .58));
+            /* background: linear-gradient(145deg, rgba(134, 188, 37, .14), rgba(10, 10, 10, .58)); */
         }
 
         .export-card p {
@@ -1650,19 +1650,19 @@
                 cardGradient.addColorStop(0, '#282728');
                 cardGradient.addColorStop(1, '#1A1A1A');
                 context.fillStyle = cardGradient;
-                context.fill();
+                // context.fill();
 
                 context.shadowColor = 'transparent';
                 context.lineWidth = 2;
                 context.strokeStyle = 'rgba(134,188,37,.9)';
-                context.stroke();
+                // context.stroke();
 
                 roundedRectPath(context, x + inset, y + inset, accentWidth, 7, 3.5);
                 context.fillStyle = '#86EB22';
-                context.fill();
+                // context.fill();
                 roundedRectPath(context, x + inset + accentWidth - 14, y + inset, 14, 7, 3.5);
                 context.fillStyle = '#00A3E0';
-                context.fill();
+                // context.fill();
 
                 const label = String(metric.canvasLabel).toLocaleUpperCase();
                 context.fillStyle = '#86EB22';
